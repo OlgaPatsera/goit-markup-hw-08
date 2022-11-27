@@ -1,0 +1,39 @@
+/*Clients*/
+.clients__title {
+    @include font(null, 36px, calc(42 / 36), null);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients__points {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    gap: 30px;
+}
+
+.points__item {
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.points__link {
+    @extend %list;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    height: 92px;
+    color: var(--clients-icon-cl);
+    transition: color var(--anim-fast-hv), border-color var(--anim-fast-hv);
+    &:hover,
+    &:focus {
+        color: var(--link-hvr-cl);
+        border-color: var(--link-hvr-cl);
+    }
+}
+.points__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+

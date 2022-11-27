@@ -1,0 +1,36 @@
+.сommun-item:not(:last-child) {
+    margin-right: 10px;
+}
+.commun-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.commun-link {
+    @extend %list;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.commun-link--color-light {
+    color: var(--social-icon-cl);
+    transition: background-color var(--anim-fast-hv), color var(--anim-fast-hv);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--social-link-bg);
+        color: var(--social-hv-icon);
+    }
+}
+
+.commun-link--color-grey {
+    color: var(--public-ftr-cl);
+    background-color: var(--public-ftr-bg);
+    transition: background-color var(--anim-fast-hv);
+
+    &:hover,
+    &:focus {
+        background-color: var(--public-hv-bg);
+    }
+}
+

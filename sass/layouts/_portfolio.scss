@@ -1,0 +1,106 @@
+/*Портфоліо*/
+.portfolio__title {
+    @include font(700, 18px, calc(36 / 18), 0.06em);
+}
+
+.portfolio__filter {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter__btn {
+    border-radius: 4px;
+    border: none;
+    padding: 6px 21px;
+    cursor: pointer;
+    @include font(500, 16px, calc(26 / 16), null);
+    font-family: inherit;
+    background-color: var(--btn-bg-cl);
+    transition: background-color var(--anim-fast-hv), color var(--anim-fast-hv),
+        box-shadow var(--anim-fast-hv);
+    &:hover,
+    &:focus {
+        background-color: var(--btn-bg-hover);
+        color: var(--btn-text-hover);
+        box-shadow: var(--btn-shadow-hv);
+    }
+}
+
+.portfolio__cards {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.cards__item {
+    width: 370px;
+}
+.cards__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow var(--anim-fast-hv);
+
+    &:hover,
+    &:focus {
+        box-shadow: var(--portfolio-shadow-hv);
+    }
+}
+
+.cards__text {
+    @include font(null, 16px, calc(30 / 16), null);
+    color: var(--secondary-txt-cl);
+    margin-top: 4px;
+}
+
+.cards__group {
+    padding: 20px 24px 19px 24px;
+    border-left: var(--portfolio-cards-border);
+    border-right: var(--portfolio-cards-border);
+    border-bottom: var(--portfolio-cards-border);
+}
+
+.cards__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.cards__overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform var(--anim-fast-hv);
+    background-color: var(--portfolio-box-bg);
+    padding-left: 24px;
+    padding-right: 24px;
+    .cards__link:hover & {
+            transform: translateY(0);
+    }
+}
+
+.cards__description {
+    @include font(null, 18px, calc(28 / 14), null);
+    color: var(--white-title-cl);
+}
+.cards__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+}

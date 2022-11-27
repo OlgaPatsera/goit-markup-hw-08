@@ -1,0 +1,42 @@
+/*Особливості*/
+.feature__container {
+    display: flex;
+}
+
+.feature__aspect {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    gap: 30px;
+}
+
+.aspect__item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    list-style: none;
+}
+
+.aspect__group {
+    @extend %list;
+    height: 120px;
+    background-color: var(--feature-icon-bg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.aspect__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.aspect__title {
+    margin-bottom: 10px;
+    @include font(700, 14px, calc(16 / 14), null);
+    text-transform: uppercase;
+}
+
+.aspect__text {
+    color: var(--secondary-txt-cl);
+}

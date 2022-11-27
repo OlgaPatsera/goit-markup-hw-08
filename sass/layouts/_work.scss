@@ -1,0 +1,41 @@
+/*Чим ми займаємось*/
+.work {
+    padding-top: 0;
+}
+.work__title {
+    @include font(700, 36px, calc(42 / 36), null);
+    text-align: center;
+}
+
+.work__label {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    list-style: none;
+}
+
+.label__item {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.label__title {
+    @include font(null, 14px, calc(16 / 14), null);
+    text-transform: uppercase;
+    color: var(--white-title-cl);
+    text-align: center;
+}
+
+.label__thumb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    @extend %list;
+}

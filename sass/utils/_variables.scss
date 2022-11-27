@@ -1,0 +1,64 @@
+:root {
+    /*Font*/
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    /*Text colors*/
+    --main-txt-cl: #212121;
+    --secondary-txt-cl: #757575;
+    --white-title-cl: #ffffff;
+    /*Logo colors*/
+    --first-logo-cl: #2196f3;
+    --dark-logo-cl: #000000;
+    --light-logo-cl: #ffffff;
+    /*LINK colors*/
+    --link-hvr-cl: #2196f3;
+    --link-nav-cl: #212121;
+    --contacts-hdr-cl: #757575;
+    --contacts-ftr-cl-60: rgba(255, 255, 255, 0.6);
+    --adress-ftr-cl: #ffffff;
+    /*Background colors*/
+    --accent-bg-cl: #ffffff;
+    --dark-bg-cl: #2f303a;
+    --light-bg-cl: #f5f4fa;
+    /*Button hero*/
+    --hero-btn-cl: #2196f3;
+    --hero-border: 1px solid #2196f3;
+    --hero-btn-txt: #ffffff;
+    --btn-radius: 4px;
+    --hero-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --hero-hv-cl: #188ce8;
+    --modal-bg-hero: rgba(0, 0, 0, 0.2);
+    --modal-border-radius: 4px;
+    --modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    --vector-border-modal: rgba(0, 0, 0, 0.1);
+    /*Button portfolio*/
+    --btn-bg-hover: #2196f3;
+    --btn-text-hover: #ffffff;
+    --btn-bg-cl: #f5f4fa;
+    --btn-txt-cl: #212121;
+    --btn-shadow-hv: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    /*Teams link*/
+    --teams-bg: #ffffff;
+    --teams-link-title: #212121;
+    --teams-border-radius: 0px 0px 4px 4px;
+    --teams-border-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    /*Other*/
+    --portfolio-cards-border: 1px solid #eeeeee;
+    --portfolio-shadow-hv: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    --portfolio-box-bg: rgba(33, 150, 243, 0.9);
+    --header-border: 1px solid #ececec;
+    --feature-icon-bg: #f5f4fa;
+    --clients-icon-cl: #afb1b8;
+    --social-icon-cl: #afb1b8;
+    --social-link-bg: #2196f3;
+    --social-hv-icon: #ffffff;
+    --public-ftr-cl: #ffffff;
+    --public-ftr-bg: rgba(255, 255, 255, 0.1);
+    --public-hv-bg: #2196f3;
+    /*Animation*/
+    --anim-fast-hv: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
