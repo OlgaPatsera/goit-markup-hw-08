@@ -9,21 +9,29 @@
 
 .teams__members {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 0;
+    
     padding-left: 0;
     list-style: none;
+    gap: 30px;
 }
 
 .members__item {
     display: flex;
     flex-direction: column;
-    width: 270px;
+    /*width: 270px;*/
+    width: 100%;
     border-radius: var(--teams-border-radius);
     box-shadow: var(--teams-border-shadow);
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @include tablet {
+        max-width: calc((100% - 30px) / 2);
+    }
+    
+    @include desktop {
+        max-width: calc((100% - 120px) / 4);
     }
 }
 
@@ -45,7 +53,6 @@
     color: var(--secondary-txt-cl);
     text-align: center;
 }
-
 .members__social {
     display: flex;
     list-style: none;

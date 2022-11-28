@@ -1,7 +1,11 @@
 /*Чим ми займаємось*/
 .work {
     padding-top: 0;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
+
 .work__title {
     @include font(700, 36px, calc(42 / 36), null);
     text-align: center;

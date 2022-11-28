@@ -9,8 +9,14 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 h1,
@@ -24,6 +30,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .label__thumb, .check-text span, .check-text, .btn-close, .connect__link, .aspect__group, .points__link, .commun-link {
@@ -98,11 +105,25 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -150,8 +171,11 @@ img {
   align-items: center;
 }
 
-.сommun-item:not(:last-child) {
-  margin-right: 10px;
+/*.сommun-item:not(:last-child) {
+    margin-right: 10px;
+}*/
+.сommun-item {
+  gap: 10px;
 }
 
 .commun-icon {
@@ -244,6 +268,7 @@ img {
 
 .feature__aspect {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -253,8 +278,18 @@ img {
 .aspect__item {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 100%;
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .aspect__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aspect__item {
+    max-width: calc((100% - 120px) / 4);
+  }
 }
 
 .aspect__group {
@@ -275,6 +310,11 @@ img {
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .aspect__title {
+    text-align: center;
+  }
 }
 
 .aspect__text {
@@ -843,21 +883,31 @@ nav {
 
 .teams__members {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  gap: 30px;
 }
 
 .members__item {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  /*width: 270px;*/
+  width: 100%;
   border-radius: var(--teams-border-radius);
   box-shadow: var(--teams-border-shadow);
 }
-.members__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .members__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .members__item {
+    max-width: calc((100% - 120px) / 4);
+  }
 }
 
 .members__group {
@@ -892,6 +942,11 @@ nav {
 /*Чим ми займаємось*/
 .work {
   padding-top: 0;
+}
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__title {

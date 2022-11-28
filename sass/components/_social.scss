@@ -1,6 +1,7 @@
-.сommun-item:not(:last-child) {
+/*.сommun-item:not(:last-child) {
     margin-right: 10px;
-}
+}*/
+
 .commun-icon {
     width: 20px;
     height: 20px;
@@ -34,3 +35,6 @@
     }
 }
 
+.social {
+    gap: 10px;
+}
