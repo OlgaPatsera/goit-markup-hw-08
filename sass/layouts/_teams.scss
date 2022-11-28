@@ -1,7 +1,13 @@
 .teams {
     background-color: var(--light-bg-cl);
 }
+.members__social {
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
 
+}
 .teams__title {
     @include font(700, 36px, calc(42 / 36), null);
     text-align: center;
@@ -52,11 +58,4 @@
     @include font(null, 16px, calc(19 / 16), null);
     color: var(--secondary-txt-cl);
     text-align: center;
-}
-.members__social {
-    display: block;
-    margin: 0 auto;
-    list-style: none;
-    padding-left: 0;
-    
 }
