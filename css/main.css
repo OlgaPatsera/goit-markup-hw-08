@@ -33,14 +33,7 @@ img {
   width: 100%;
 }
 
-.label__thumb,
-.check-text span,
-.check-text,
-.btn-close,
-.connect__link,
-.aspect__group,
-.points__link,
-.commun-link {
+.label__thumb, .check-text span, .check-text, .btn-close, .connect__link, .aspect__group, .points__link, .commun-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,8 +41,8 @@ img {
 
 :root {
   /*Font*/
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   /*Text colors*/
   --main-txt-cl: #212121;
   --secondary-txt-cl: #757575;
@@ -78,7 +71,7 @@ img {
   --modal-bg-hero: rgba(0, 0, 0, 0.2);
   --modal-border-radius: 4px;
   --modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+      0px 2px 1px rgba(0, 0, 0, 0.2);
   --vector-border-modal: rgba(0, 0, 0, 0.1);
   /*Button portfolio*/
   --btn-bg-hover: #2196f3;
@@ -86,17 +79,17 @@ img {
   --btn-bg-cl: #f5f4fa;
   --btn-txt-cl: #212121;
   --btn-shadow-hv: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   /*Teams link*/
   --teams-bg: #ffffff;
   --teams-link-title: #212121;
   --teams-border-radius: 0px 0px 4px 4px;
   --teams-border-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+      0px 2px 1px rgba(0, 0, 0, 0.2);
   /*Other*/
   --portfolio-cards-border: 1px solid #eeeeee;
   --portfolio-shadow-hv: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   --portfolio-box-bg: rgba(33, 150, 243, 0.9);
   --header-border: 1px solid #ececec;
   --feature-icon-bg: #f5f4fa;
@@ -178,6 +171,10 @@ img {
   align-items: center;
 }
 
+.social {
+  gap: 10px;
+}
+
 .commun-icon {
   width: 20px;
   height: 20px;
@@ -194,8 +191,7 @@ img {
   color: var(--social-icon-cl);
   transition: background-color var(--anim-fast-hv), color var(--anim-fast-hv);
 }
-.commun-link--color-light:hover,
-.commun-link--color-light:focus {
+.commun-link--color-light:hover, .commun-link--color-light:focus {
   background-color: var(--social-link-bg);
   color: var(--social-hv-icon);
 }
@@ -205,13 +201,8 @@ img {
   background-color: var(--public-ftr-bg);
   transition: background-color var(--anim-fast-hv);
 }
-.commun-link--color-grey:hover,
-.commun-link--color-grey:focus {
+.commun-link--color-grey:hover, .commun-link--color-grey:focus {
   background-color: var(--public-hv-bg);
-}
-
-.social {
-  gap: 10px;
 }
 
 .visually-hidden {
@@ -224,7 +215,7 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -256,8 +247,7 @@ img {
   color: var(--clients-icon-cl);
   transition: color var(--anim-fast-hv), border-color var(--anim-fast-hv);
 }
-.points__link:hover,
-.points__link:focus {
+.points__link:hover, .points__link:focus {
   color: var(--link-hvr-cl);
   border-color: var(--link-hvr-cl);
 }
@@ -351,8 +341,7 @@ img {
   color: var(--adress-ftr-cl);
   transition: color var(--anim-fast-hv);
 }
-.contacts__link-maps:hover,
-.contacts__link-maps:focus {
+.contacts__link-maps:hover, .contacts__link-maps:focus {
   color: var(--link-hvr-cl);
 }
 
@@ -361,8 +350,7 @@ img {
   font-style: normal;
   color: var(--contacts-ftr-cl-60);
 }
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--link-hvr-cl);
 }
 
@@ -432,8 +420,7 @@ img {
   margin-left: 12px;
   transition: background-color var(--anim-fast-hv);
 }
-.send-form__btn:hover,
-.send-form__btn:focus {
+.send-form__btn:hover, .send-form__btn:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -473,8 +460,7 @@ nav {
   position: relative;
   transition: color var(--anim-fast-hv);
 }
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--link-hvr-cl);
 }
 
@@ -504,8 +490,7 @@ nav {
   gap: 10px;
   transition: color var(--anim-fast-hv);
 }
-.connect__link:hover,
-.connect__link:focus {
+.connect__link:hover, .connect__link:focus {
   color: var(--link-hvr-cl);
 }
 
@@ -517,7 +502,7 @@ nav {
   color: var(--link-hvr-cl);
 }
 .current::after {
-  content: '';
+  content: "";
   display: inline-flex;
   width: 100%;
   height: 4px;
@@ -538,8 +523,7 @@ nav {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   max-width: 1600px;
   height: 600px;
   background-position: center;
@@ -577,8 +561,7 @@ nav {
   line-height: 1.875;
   letter-spacing: 0.06em;
 }
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--hero-hv-cl);
 }
 
@@ -620,8 +603,7 @@ nav {
   cursor: pointer;
   transition: fill var(--anim-fast-hv);
 }
-.btn-close:hover,
-.btn-close:focus {
+.btn-close:hover, .btn-close:focus {
   fill: #2196f3;
 }
 
@@ -739,8 +721,7 @@ nav {
   cursor: pointer;
   transition: background-color var(--anim-fast-hv);
 }
-.btn-modal:hover,
-.btn-modal:focus {
+.btn-modal:hover, .btn-modal:focus {
   background-color: #188ce8;
 }
 
@@ -804,11 +785,9 @@ nav {
   line-height: 1.625;
   font-family: inherit;
   background-color: var(--btn-bg-cl);
-  transition: background-color var(--anim-fast-hv), color var(--anim-fast-hv),
-    box-shadow var(--anim-fast-hv);
+  transition: background-color var(--anim-fast-hv), color var(--anim-fast-hv), box-shadow var(--anim-fast-hv);
 }
-.filter__btn:hover,
-.filter__btn:focus {
+.filter__btn:hover, .filter__btn:focus {
   background-color: var(--btn-bg-hover);
   color: var(--btn-text-hover);
   box-shadow: var(--btn-shadow-hv);
@@ -834,8 +813,7 @@ nav {
   color: inherit;
   transition: box-shadow var(--anim-fast-hv);
 }
-.cards__link:hover,
-.cards__link:focus {
+.cards__link:hover, .cards__link:focus {
   box-shadow: var(--portfolio-shadow-hv);
 }
 
@@ -891,6 +869,13 @@ nav {
 
 .teams {
   background-color: var(--light-bg-cl);
+}
+
+.members__social {
+  display: block;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
 }
 
 .teams__title {
@@ -951,13 +936,6 @@ nav {
   text-align: center;
 }
 
-.members__social {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
 /*Чим ми займаємось*/
 .work {
   padding-top: 0;
@@ -1005,4 +983,4 @@ nav {
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
