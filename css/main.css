@@ -872,7 +872,7 @@ nav {
 }
 
 .members__social {
-  display: block;
+  display: flex;
   margin: 0 auto;
   list-style: none;
   padding-left: 0;
