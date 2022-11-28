@@ -1,9 +1,10 @@
 .teams {
     background-color: var(--light-bg-cl);
 }
+
 .members__social {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
     list-style: none;
     padding-left: 0;
 }
@@ -44,7 +45,8 @@
 .members__group {
     background-color: var(--teams-bg);
     border-radius: var(--teams-border-radius);
-    padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 24px;    
 }
 
 .members__subtitle {
@@ -59,3 +61,4 @@
     color: var(--secondary-txt-cl);
     text-align: center;
 }
+

@@ -14,14 +14,19 @@
 .hero-modal {
     position: absolute;
     padding: 40px;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--accent-bg-cl);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: var(--modal-border-radius);
     box-shadow: var(--modal-shadow);
+
+    @include desktop {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .btn-close {
@@ -146,6 +151,13 @@
     color: var(--secondary-txt-cl);
     @include font(null, 14px, calc(24 / 14), 0.03em);
     @extend %list;
+
+    font-size: 12px;
+    line-height: 14px;
+        letter-spacing: 0.03em;
+            @include desktop {
+                max-width: 1200px;
+            }
 }
 
 .check-text span {
