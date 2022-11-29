@@ -149,15 +149,14 @@
 
 .check-text {
     color: var(--secondary-txt-cl);
-    @include font(null, 14px, calc(24 / 14), 0.03em);
+    @include font(null, 12px, calc(14 / 12), 0.03em);
     @extend %list;
-
     font-size: 12px;
     line-height: 14px;
-        letter-spacing: 0.03em;
-            @include desktop {
-                max-width: 1200px;
-            }
+    letter-spacing: 0.03em;
+    @include desktop {
+        @include font(null, 14px, calc(24 / 14), 0.03em);
+    }
 }
 
 .check-text span {
@@ -177,6 +176,9 @@
 
 .link-agree {
     color: #2196f3;
-    @include font(null, 14px, calc(24 / 14), 0.03em);
-    margin-left: 6px;
+    @include font(null, 12px, calc(14 / 12), 0.03em);
+    margin-left: 2px;
+    @include desktop {
+        @include font(null, 14px, calc(24 / 14), 0.03em);
+    }
 }

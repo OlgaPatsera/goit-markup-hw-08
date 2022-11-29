@@ -9,5 +9,7 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    @media screen and (max-width:1199px) {
+    flex-direction: column;
+    }
 }

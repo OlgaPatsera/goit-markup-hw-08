@@ -1,6 +1,21 @@
 .footer__address {
     margin-top: 20px;
 }
+
+.box-group {
+@media screen and (max-width:1199px) {
+        text-align: center;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+    .footer__group {
+    margin-bottom: 60px;
+    @include tablet {
+        margin-right: 165px;        
+    }
+}
 .address__contacts {
     margin-top: 0;
     margin-bottom: 0;
@@ -36,9 +51,9 @@
 }
 
 .footer__public {
-    margin-left: 93px;
+    margin-bottom: 60px;
+    
 }
-
 .public__title {
     @include font(null, 14px, calc(16 / 14), null);
     text-transform: uppercase;
@@ -49,24 +64,35 @@
 .public__list {
     display: flex;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
+    justify-content: center;
 }
 
-.footer__subscribe {
-    margin-left: 93px;
-}
 .subscribe__title {
     @include font(700, 14px, calc(16 / 14), 0.03em);
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
+
+.subscribe__send-form {
+    margin: 0 auto;
+    text-align: center;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .send-form__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
+    margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--dark-bg-cl);
@@ -90,7 +116,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-left: 12px;
+    /*margin-left: 12px;*/
     transition: background-color var(--anim-fast-hv);
     &:hover,
     &:focus {

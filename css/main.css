@@ -153,7 +153,11 @@ img {
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+}
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    flex-direction: column;
+  }
 }
 
 .header {
@@ -333,6 +337,24 @@ img {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1199px) {
+  .box-group {
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer__group {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__group {
+    margin-right: 165px;
+  }
+}
+
 .address__contacts {
   margin-top: 0;
   margin-bottom: 0;
@@ -366,7 +388,7 @@ img {
 }
 
 .footer__public {
-  margin-left: 93px;
+  margin-bottom: 60px;
 }
 
 .public__title {
@@ -380,12 +402,9 @@ img {
 .public__list {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding-left: 0;
-}
-
-.footer__subscribe {
-  margin-left: 93px;
+  justify-content: center;
 }
 
 .subscribe__title {
@@ -396,12 +415,27 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.subscribe__send-form {
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__send-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .send-form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--dark-bg-cl);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -428,7 +462,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
+  /*margin-left: 12px;*/
   transition: background-color var(--anim-fast-hv);
 }
 .send-form__btn:hover, .send-form__btn:focus {
@@ -768,8 +802,8 @@ nav {
 
 .check-text {
   color: var(--secondary-txt-cl);
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   font-size: 12px;
   line-height: 14px;
@@ -777,7 +811,9 @@ nav {
 }
 @media screen and (min-width: 1200px) {
   .check-text {
-    max-width: 1200px;
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -797,10 +833,17 @@ nav {
 
 .link-agree {
   color: #2196f3;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
-  margin-left: 6px;
+  margin-left: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .link-agree {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+  }
 }
 
 /*Портфоліо*/
